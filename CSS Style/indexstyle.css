@@ -1,0 +1,35 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('img_1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   opacity : 0.5;
+}
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+ }
+ 
+ li {
+   float: left;
+   font-size: 24px;
+ }
+ 
+ li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 20px 35px;
+   text-decoration: none;
+ }
+ 
+ li a:hover {
+   background-color: slategrey;
+ }
+  
