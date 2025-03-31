@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link href="CSS Style/contactstyle.css" rel="stylesheet">
+    <link href="Java Scripts/contact.js" rel="stylesheet">  
+
+</head>
+<script>
+     
+    function validateform()
+    {
+        let name=document.getElementById("fname").value.trim();
+        let email=document.getElementById("email").value.trim();
+        let comm=document.getElementById("comm").ariaValueText;
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(name == "")
+        {
+            alert("Name is a required field");
+            return false;
+        }
+         if(comm == "")
+        {
+             alert("PLEASE ADD YOUR COMMENTS!!");
+        }
+         
+        if(!emailPattern.test(email))
+        {
+            alert("Invalid Email format");
+            return false;
+        }
+        alert("Form submitted succefully!!");
+        return true;
+        
+    }
+    
+</script>
+<body>
+ 
+    <form> 
+       <h1 class="mp3">Contact Us<br><br></h1>
+        <br><br>
+       <h1 class="mpl">Let's Start a Conversation</h1><br><br>
+       <p style="text-align: center; font-weight: bold;">You can Contact on number <u style="color: blue;">8734952299</u> Or you can Fill up below <Form></Form></p><br><br><br>
+       <label for="fname" style="font-size: 25px;">Name : </label>
+       <input type="text" id="fname" placeholder="Name"></input><br><br>
+       <label for="email">Email : </label>
+       <input type="email" placeholder="Email" id="email"/>
+       <br><br><br>
+       <label for="District">Select your District : </label>
+       <select name="District">
+        <option value="Kheda">Kheda</option>
+        <option value="Vadodara">Vadodara</option>
+         <option value="Charotar">Charotar</option>
+        <option value="Panchmahal">Panchmahal</option>
+        <option value="Banaskantha">Banaskantha</option>
+        <option value="Arvalli">Arvalli</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        </select>
+         <br><br>
+         <br>
+         
+         <label for="comm">Additional Comments : </label><br> 
+          <textarea name="comm" style="font-size: 20px;font-weight: bold;" rows="6" cols="117" id="comm">
+           
+          </textarea>
+
+
+      </select>
+       <br><br> 
+       
+      <p style="text-align: center;"> <input class="inr" type="button" value="Submit" onclick="validateform()"></input>  </p>
+    </form>
+    <br><br>
+    <div style=" background-color: grey;"><a href="index.html" style="text-decoration: none;margin-left: 110px;color: white;">Home|</a><a href="DDUAdvan.html" style="text-decoration: none;color: white;">DDU Advantage</a></div>
+</body>
+</html>
