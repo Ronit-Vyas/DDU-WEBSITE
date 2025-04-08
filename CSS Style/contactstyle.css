@@ -11,8 +11,9 @@ h1.mpl{
  text-align: center;
  font-size: 30px;
 }
-input{
-   font-size: 25px;
+input.a{
+   font-size: 18px;
+   padding: 10px;
 }
 label{
    font-size: 25px;

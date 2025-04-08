@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('im_3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     
+   }
+
+
+.hype{
+    margin-left: 80px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+p{
+   color: white;
+    background-color: red;
+    margin-left: 80px;
+    
+    font-size: 22px;
+}
