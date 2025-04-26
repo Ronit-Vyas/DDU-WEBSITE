@@ -1,0 +1,46 @@
+.gallery-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .alumni-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .alumni-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .alumni-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .alumni-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+  }
+  
+  .alumni-card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+  

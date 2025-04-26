@@ -7,23 +7,38 @@
     <link rel="stylesheet" href="CSS Style/indexstyle.css">
     <link rel="stylesheet" href="CSS Style/advntagestyle.css">
 </head>
+<script>
+    window.onload = function(){
+         // Theme Toggle
+    window.toggleTheme = function () {
+      document.body.classList.toggle("dark-mode");
+    }
+    }
+</script>
  
 <body>
-    
+    <label class="switch">
+        <input type="checkbox" id="modeToggle" onclick="toggleTheme()">
+        <span class="slider round"></span>
+      </label>
     
     <br><br><br>
-    <ul>
+    <ul class="t">
         <li>
-            <a href="DDUAdvan.html" class="myA">DDU ADVANTAGE </a>  
+            <a href="DDUAdvan.html" class="h">DDU ADVANTAGE </a>  
             
         </li>
         <li>
-            <a href="university.html" class="myA">University</a>  
+            <a href="university.html" class="h">University</a>  
            
             
         </li>
-        <li><a href="contactus.html">Contact</a></li>
-        <li><a href="http://127.0.0.1/Html%20files/php%20files/">ALUMNI GROUP</a></li>
+         
+        
+        <li><a class="h"  href="academiccon.html">Student Innovations</a></li>
+        <li><a class="h"  href="about.html">About Us</a>  
+          <li><a class="h" href="contactus.html">Contact</a></li>
+    </li>
       </ul>
       <br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br>

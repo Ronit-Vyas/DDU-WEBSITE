@@ -5,33 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS Style/indexstyle.css">
-    <link rel="stylesheet" href="CSS Style/advstyle.css">
-  </head>
+  </head>  
+  <script>
+  function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+  window.onload = function () {
+    // Typewriter Effect
+    const message = "Empowering Minds, Building Futures at DDU.";
+    let i = 0;
+
+    function typeWriter() {
+      if (i < message.length) {
+        document.getElementById("typewriter").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 80);
+      }
+    }
+
+    typeWriter();
+
+    // Theme Toggle
+    window.toggleTheme = function () {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Admission Modal Logic
+    const modal = document.getElementById("admissionModal");
+    const btn = document.getElementById("admissionBtn");
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+
+  setInterval(() => {
+  const now = new Date();
+  document.getElementById("datetime").innerText = now.toLocaleString();
+}, 1000);
+
+  </script>
+   
 <body>
     <br><br><br>
-    <ul>
+    <ul class="t">
         <li>
-            <a href="DDUAdvan.html" class="myA">DDU ADVANTAGE </a>  
-            <div class="dropdown"><img src="im_1.jpg"> </div>
+            <a class="h" href="DDUAdvan.html" class="h">DDU ADVANTAGE </a>  
+           
         </li>
         <li>
-            <a href="university.html" class="myA">University</a>
-            <div class="dropdown"><img src="im_2.jpg"> </div>  
+            <a class="h" href="university.html" class="h">University</a>
+            
              
         </li>
-        <li><a href="contactus.html">Contact</a></li>
-        <li><a href="http://127.0.0.1/Html%20files/php%20files/">ALUMNI GROUP</a></li>
-        <li><a href="http://127.0.0.1/Html%20files/php%20files/create.php">Request Form</a>                        </li>
+        
+        <li><a class="h"  href="academiccon.html">Student Innovations</a></li>
+        <li><a class="h"  href="about.html">About Us</a>  
+          <li><a class="h" href="contactus.html">Contact</a></li>
+        </li>
       </ul>
      
     <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
+    <br><br><br><br>
     
 
     <h1 class="hyper"><b>Dharamsinh Desai University<br>Nadiad</b></h1>
-    <p>
- 
-    </p>
      
+     
+ 
+    
+    <h2 id="typewriter" style="text-align:center; font-family:monospace;color: chartreuse;"></h2><br><br><br>
+    <label class="switch">
+      <input type="checkbox" id="modeToggle" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+  <br><br>
+  <div style="text-align: center;">
+    <section class="welcome-section">
+      <h2>Welcome to Dharamsinh Desai University</h2>
+      <p>DDU is committed to excellence in education, research, and innovation. Located in Nadiad, we are shaping the future of thousands of young minds.</p>
+    </section>
+    <section class="highlights">
+      <h2>Why Choose DDU?</h2>
+      <ul>
+        <li> NAAC Accredited with A Grade</li>
+        <li> Over 10,000 successful graduates</li>
+        <li> Cutting-edge research and innovation labs</li>
+        <li> Strong industry connections and placements</li>
+      </ul>
+    </section>
+    <section class="stats">
+      <div class="stat-box">20+ UG/PG Programs</div>
+      <div class="stat-box">100+ Faculty Members</div>
+      <div class="stat-box">50+ Recruiters Every Year</div>
+      <div class="stat-box">85% Placement Rate</div>
+    </section>
+    <section class="stats">
+      <h2>Academic Departments</h2>
+      <div class="dept-list">
+        <div class="stat-box">Computer Engineering</div>
+        <div class="stat-box"> Mechanical Engineering</div>
+        <div class="stat-box"> Chemical Engineering</div>
+        <div class="stat-box"> Business Administration</div>
+        <div class="stat-box"> Pharmacy</div>
+        <div class="stat-box"> Dental Science</div>
+        <div class="stat-box"> MBBS</div>
+
+
+      </div>
+    </section>
+    <section class="campus-life">
+      <h2>Experience Vibrant Campus Life</h2>
+      <p>With tech fests, cultural events, sports, and more — DDU offers a holistic environment for your growth.</p>
+      <img src="CSS Style/im_5.jpg" alt="Campus" class="campus-image">
+    </section>
+    <section class="cta">
+      <h2>Explore DDU Today</h2>
+      <a href="admissions.html" class="cta-button">Learn About Admissions</a>
+    </section>
+                    
+  </div>
+ <!-- Admission Info Button -->
+ <div style="justify-content: center;align-items: center;height: 100vh;"> 
+<button id="admissionBtn" class="admission-button">Admission Information</button>
+</div>
+
+<!-- Modal Structure -->
+<div id="admissionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 style="text-align: center;"> Admission Information</h2>
+    <p><strong>Programs Offered:</strong> B.Tech, M.Tech, MBA, MCA, Ph.D. ,B.Pharm ,M.Pharm ,MBBS ,BHMS</p>
+    <p><strong>Eligibility:</strong></p>
+    <ul>
+      <li>For B.Tech: 10+2 with PCM + GUJCET</li>
+      <li>For M.Tech: Relevant UG + GATE (preferred)</li>
+      <li>MBA/MCA: Graduation + CMAT</li>
+    </ul>
+    <p><strong>Admission Process:</strong></p>
+    <ol>
+      <li>Apply via ACPC portal or DDU admission site : <a href="https://gujacpc.admissions.nic.in/" style="text-decoration: underline;color: blue;font-size: 16px;">ACPC Portal</a></li>
+      <li>Appear for counseling at DDU</li>
+      <li>Seat allocation & confirmation</li>
+    </ol>
+    <p><strong>Important Dates:</strong></p>
+    <ul>
+      <li>Application Opens: May 15</li>
+      <li>First Round Counseling: June 10</li>
+      <li>Session Starts: July 15</li>
+    </ul>
+    <p><em>Need help? Click on this <a href="contactus.html">Contact Form</a> or reach out to the Admission Cell.</em></p>
+    <p id="datetime" style="font-size: 15px;text-align:right; padding:10px;"></p>
+
+  </div>
+ </div>
+
+  
+   
+
+
 </body>
 </html>
