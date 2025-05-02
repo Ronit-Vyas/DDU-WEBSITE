@@ -23,14 +23,7 @@ body {
  .dark-mode #title {
   animation: glow 1s ease-in-out infinite alternate;
 }
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff;
-  }
-  to {
-    text-shadow: 0 0 20px #0ff;
-  }
-}
+ 
  
  
   
@@ -45,8 +38,7 @@ body {
    text-decoration: none;
  }
 .h:hover{
-  float: left;
-  font-size: 24px;
+  
   background-color: green;
 }
  
@@ -59,7 +51,7 @@ body {
   
  }
   
-  /* Optional dark mode styling */
+  
 .dark-mode {
   background-color: #121212;
   color: #f1f1f1;
@@ -82,17 +74,13 @@ body {
   position: absolute;
   top: 20px;
   right: 30px;
-  display: inline-block;
+  
   width: 60px;
   height: 34px;
-  z-index: 999;
+  
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+ 
 
 /* Slider track */
 .slider {
@@ -305,6 +293,13 @@ body.dark-mode {
 
 .filter-buttons button:hover {
   background-color: #005fa3;
+}
+div.gallery:hover{
+ border: 2px solid;
+}
+div.gallery img{
+  width: auto;
+  height: auto;
 }
 
 

@@ -24,15 +24,15 @@
     const message = "Empowering Minds, Building Futures at DDU.";
     let i = 0;
 
-    function typeWriter() {
+    function typeWrite() {
       if (i < message.length) {
         document.getElementById("typewriter").innerHTML += message.charAt(i);
         i++;
-        setTimeout(typeWriter, 80);
+        setTimeout(typeWrite, 80);
       }
     }
 
-    typeWriter();
+    typeWrite();
 
     // Theme Toggle
     window.toggleTheme = function () {
@@ -97,7 +97,7 @@
     <h2 id="typewriter" style="text-align:center; font-family:monospace;color: chartreuse;"></h2><br><br><br>
     <label class="switch">
       <input type="checkbox" id="modeToggle" onclick="toggleTheme()">
-      <span class="slider round"></span>
+      <span class="slider"></span>
     </label>
   <br><br>
   <div style="text-align: center;">
@@ -137,7 +137,10 @@
     <section class="campus-life">
       <h2>Experience Vibrant Campus Life</h2>
       <p>With tech fests, cultural events, sports, and more — DDU offers a holistic environment for your growth.</p>
-      <img src="CSS Style/im_5.jpg" alt="Campus" class="campus-image">
+      <div class="gallery">
+        <a target="_blank" href="CSS Style/im_5.jpg" alt="Campus" width="700px" height="500px">
+      <img src="CSS Style/im_5.jpg" alt="Campus" class="campus-image"></a>
+      </div>
     </section>
     <section class="cta">
       <h2>Explore DDU Today</h2>
