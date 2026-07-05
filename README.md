@@ -65,11 +65,10 @@ No additional installation is required.
 * Home Page :
 <img width="1867" height="838" alt="Screenshot 2026-07-05 141937" src="https://github.com/user-attachments/assets/71820553-ca90-4862-97a7-b0ec9d2e1459" />
 
-* Login Page
-* Registration Page
-* Alumni Dashboard
+* Contact Page :
+  <img width="1880" height="848" alt="Contact Page" src="https://github.com/user-attachments/assets/072aca56-729e-42b2-b493-5dda5565cf9b" />
 
-*(Create a `screenshots` folder and place the images there.)*
+
 
 ---
 
@@ -77,39 +76,21 @@ No additional installation is required.
 
 This project was developed to gain practical experience with:
 
-* Semantic HTML
+* HTML
 * Responsive web design
 * CSS styling
-* Bootstrap components
 * JavaScript DOM manipulation
 * Multi-page website development
 * Frontend project organization
 
 ---
 
-## 🔮 Future Improvements
-
-* Backend integration
-* User authentication
-* Alumni profile management
-* Database connectivity
-* Search and filtering
-* Event announcements
-* Job and internship portal
-* Admin dashboard
-* Email notifications
-
----
 
 ## 👨‍💻 Author
 
 **Ronit Vyas**
 
 B.Tech Computer Engineering Student
-
-GitHub: https://github.com/Ronit-Vyas
-
-LinkedIn: https://www.linkedin.com/in/ronit-vyas-a9a064343/
 
 ---
 
